@@ -9,7 +9,7 @@ server:
     allowedorigins: # allowed origins for websocket connections (same origin is always allowed, default only same origin)
       - gotify.onrender.com
   cors: # Sets cors headers only when needed and provides support for multiple allowed origins. Overrides Access-Control-* Headers in response headers.
-    alloworigins:
+    # alloworigins:
     # - "aisyrizqo.onrender.com"
     # - "aisyrizqo.my.id"
     # - 195.201.26.157
