@@ -8,21 +8,21 @@ server:
   stream:
     allowedorigins: # allowed origins for websocket connections (same origin is always allowed, default only same origin)
       - gotify.onrender.com
-  cors: # Sets cors headers only when needed and provides support for multiple allowed origins. Overrides Access-Control-* Headers in response headers.
-    alloworigins:
-    - "aisyrizqo.onrender.com"
-    - "aisyrizqo.my.id"
-    - 195.201.26.157
-    - 116.203.134.67
-    - 116.203.129.16
-    - 23.88.105.37
-    - 128.140.8.200
-    allowmethods:
-    - "GET"
-    - "POST"
-    allowheaders:
-      - "Authorization"
-      - "content-type"
+  # cors: # Sets cors headers only when needed and provides support for multiple allowed origins. Overrides Access-Control-* Headers in response headers.
+  #   alloworigins:
+  #   - "aisyrizqo.onrender.com"
+  #   - "aisyrizqo.my.id"
+  #   - 195.201.26.157
+  #   - 116.203.134.67
+  #   - 116.203.129.16
+  #   - 23.88.105.37
+  #   - 128.140.8.200
+  #   allowmethods:
+  #   - "GET"
+  #   - "POST"
+  #   allowheaders:
+  #     - "Authorization"
+  #     - "content-type"
 database:
   dialect: postgres # the connection info is set using the GOTIFY_DATABASE_CONNECTION environment variable.
 defaultuser: # on database creation, gotify creates an admin user (these values will only be used for the first start, if you want to edit the user after the first start use the WebUI)
