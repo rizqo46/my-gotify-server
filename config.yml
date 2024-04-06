@@ -4,7 +4,7 @@ server:
     enabled: false # Render automatically enables SSL for the server
   responseheaders: # response headers added to every response (default: none)
     Access-Control-Allow-Origin: "*"
-    # Access-Control-Allow-Methods: "GET,POST"
+    Access-Control-Allow-Methods: "GET,POST"
   stream:
     allowedorigins: # allowed origins for websocket connections (same origin is always allowed, default only same origin)
       - gotify.onrender.com
